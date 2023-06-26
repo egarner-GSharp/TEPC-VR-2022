@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/VR DEMO - Temple Scene.unity
     guid: e48e99950805340918d8f140d54e02ad
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VR Test Scene.unity
     guid: 4b0e2147145431e49acefb58bc38a0c8
   m_configObjects:
