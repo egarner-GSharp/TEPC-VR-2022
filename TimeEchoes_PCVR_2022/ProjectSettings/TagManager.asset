@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Statue_2
+  - Statue_3
+  - Base_2
+  - Base_1
+  - Base_3
+  - Statue_1
   layers:
   - Default
   - TransparentFX
@@ -11,11 +17,11 @@ TagManager:
   - 
   - Water
   - UI
+  - XR Grab Interactables
   - 
   - 
   - 
-  - 
-  - 
+  - Body
   - 
   - 
   - 
