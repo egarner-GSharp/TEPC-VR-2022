@@ -10,6 +10,9 @@ TagManager:
   - Base_1
   - Base_3
   - Statue_1
+  - Spawn
+  - House
+  - Teleporter
   layers:
   - Default
   - TransparentFX
