@@ -11,9 +11,17 @@ public class ScanButton : MonoBehaviour
     {
         {
             scanBeamSpawn.SetActive(true);
-        } 
+            StartCoroutine(ScanLength());
+        }
+ 
     }
-    
+
+    IEnumerator ScanLength()
+    {
+        yield return new WaitForSeconds(2);
+        scanBeamSpawn.SetActive(false);
+        
+    }
     //public void ScanReleased()
    // {
     //    {
