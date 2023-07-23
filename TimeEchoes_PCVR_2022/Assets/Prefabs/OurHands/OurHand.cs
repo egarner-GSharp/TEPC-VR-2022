@@ -8,6 +8,7 @@ public class OurHand : MonoBehaviour
     //public values to set in Unity, private used only in script
     public GameObject ourHandPrefab;
     public InputDeviceCharacteristics ourControllerCharacteristics;
+    public GameObject scanBeamSpawn;
     
 
     private InputDevice ourDevice;
@@ -72,6 +73,15 @@ public class OurHand : MonoBehaviour
         else
         {
             ourHandAnimator.SetFloat("Grip", 0);
+        }
+
+        if (triggerValue > 0.01f)
+        {
+            scanBeamSpawn.SetActive(true);
+        }
+        else
+        {
+            scanBeamSpawn.SetActive(false);
         }
     }
 }
