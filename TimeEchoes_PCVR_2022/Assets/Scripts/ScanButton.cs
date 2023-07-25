@@ -6,26 +6,23 @@ using UnityEngine.XR;
 public class ScanButton : MonoBehaviour
 {
     public GameObject scanBeamSpawn;
+    public AudioSource scanSound;
+
 
     public void ScanPressed()
     {
         {
+            scanSound.Play();
             scanBeamSpawn.SetActive(true);
             StartCoroutine(ScanLength());
         }
- 
     }
 
     IEnumerator ScanLength()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
         scanBeamSpawn.SetActive(false);
         
     }
-    //public void ScanReleased()
-   // {
-    //    {
-    //        scanBeamSpawn.SetActive(false);
-    //    }
-   // }
+ 
 }
